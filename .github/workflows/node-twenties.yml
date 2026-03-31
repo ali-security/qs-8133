@@ -14,8 +14,8 @@ jobs:
       command: npm run tests-only
 
   node:
-    name: 'node >= 20'
+    name: node >= 20
     needs: [tests]
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - run: true
